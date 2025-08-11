@@ -7,7 +7,7 @@
 # 🏊 42 Piscine – July 2025
 **Campus: 42 Barcelona**
 
-This repository gathers all the projects developed during my participation in the **42 Barcelona Piscine**, held in July 2025. It is an intense technical experience focused on gaining practical skills in C programming, Bash scripting, data structures, and advanced UNIX usage.
+This repository gathers all the projects developed during my participation in the **42 Barcelona Piscine**, held in July 2025. It is an intense technical experience focused on gaining practical skills in C programming, Bash scripting, data structures, and Linux  usage.
 
 ---
 
