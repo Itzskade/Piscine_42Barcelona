@@ -21,7 +21,7 @@ Este repositorio reúne todos los proyectos desarrollados durante mi participaci
 
 - 🕐 Abierta 24/7 para los estudiantes  
 - 👥 Aprendizaje colaborativo y sin instrucción tradicional  
-- 🎮 Gamified course structure with progression through levels 
+- 🎮 Curso gamificado con progresión por niveles
 - 💸 Acceso gratuito, sin requisitos académicos previos  
 - 🌍 Campus distribuidos en todo el mundo  
 - 📁 Proyectos con correcciones entre estudiantes  
