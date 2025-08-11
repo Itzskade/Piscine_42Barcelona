@@ -44,7 +44,7 @@ The **Piscine** is a 26‑day selection program that tests your ability to learn
 To demonstrate that participants can:
  
 - Learn on their own under real-world conditions  
-- Apply fundamentals of C programming and UNIX  
+- Apply fundamentals of C programming and Linux  
 - Work consistently and collaboratively  
 - Progress and adapt when facing complex technical challenges  
 
