@@ -21,7 +21,7 @@ This repository gathers all the projects developed during my participation in th
 
 - 🕐 Open 24/7 for students  
 - 👥 Collaborative learning with no traditional instruction  
-- 🎮 Gamified curriculum with level progression  
+- 🎮 Gamified course structure with progression through levels
 - 💸 Free access, no prior academic requirements  
 - 🌍 Campuses all over the world  
 - 📁 Projects graded by peer evaluation  
