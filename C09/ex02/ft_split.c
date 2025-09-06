@@ -12,75 +12,75 @@
 
 #include <stdlib.h>
 
-int	is_separator(char c, char *charset)
+int     its_charset(char str, char *charset)
 {
-	while (*charset)
-	{
-		if (c == *charset)
-			return (1);
-		charset++;
-	}
-	return (0);
+        while (*charset)
+        {
+                if (str == *charset)
+                        return (1);
+                charset++;
+        }
+        return (0);
+
 }
 
-int	count_word(char *str, char *charset)
+size_t  count_words(char const *str, char *charset)
 {
-	int	count;
+        size_t  count;
 
-	count = 0;
-	while (*str)
-	{
-		while (*str && is_separator(*str, charset))
-			str++;
-		if (*str)
-			count++;
-		while (*str && !is_separator(*str, charset))
-			str++;
-	}
-	return (count);
+        count = 0;
+        while (*str)
+        {
+                while (*str && its_charset(*str, charset))
+                        str++;
+                if (*str)
+                        count++;
+                while (*str && !its_charset(*str, charset))
+                        str++;
+        }
+        return (count);
 }
 
-char	*word_dup(char *start, char *end)
+char    *ft_strndup(char const *str, size_t n)
 {
-	char	*word;
-	char	*copy;
-	int		len;
+        char    *ptr;
+        char    *dup;
 
-	len = end - start;
-	word = malloc(sizeof(*word) * (len + 1));
-	if (!word)
-		return (NULL);
-	copy = word;
-	while (start < end)
-		*copy++ = *start++;
-	*copy = '\0';
-	return (word);
+        if (!str || !n)
+                return (NULL);
+        dup = malloc(sizeof(*dup) * (n + 1));
+        if (!dup)
+                return (NULL);
+        ptr = dup;
+        while (n--)
+                *ptr++ = *str++;
+        *ptr = '\0';
+        return (dup);
 }
 
-char	**ft_split(char *str, char *charset)
+char    **ft_split(char const *str, char *charset)
 {
-	char	**result;
-	char	*start;
-	int		i;
 
-	result = malloc(sizeof(*result) * (count_word(str, charset) + 1));
-	if (!result)
-		return (NULL);
-	i = 0;
-	while (*str)
-	{
-		if (!is_separator(*str, charset))
-		{
-			start = str;
-			while (*str && !is_separator(*str, charset))
-				str++;
-			result[i++] = word_dup(start, str);
-		}
-		else
-			str++;
-	}
-	result[i] = NULL;
-	return (result);
+        char    **ptr;
+        char    **arr;
+        char    *start;
+
+        arr = malloc(sizeof(*arr) * (count_words(str, charset) + 1));
+        if (!arr)
+                return (NULL);
+        ptr = arr;
+        while (*str)
+        {
+                while (*str && its_charset(*str, charset))
+                        str++;
+                start = str;
+                while (*str && !its_charset(*str, charset))
+                        str++;
+                if (str != start)
+                        *ptr++  = ft_strndup(start, str - start);
+        }
+        *ptr = NULL;
+        return (arr);
 }
 /*
 #include <stdio.h>
