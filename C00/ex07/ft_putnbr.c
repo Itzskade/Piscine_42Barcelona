@@ -24,10 +24,10 @@ void	ft_putnbr(int nb)
 	if (nb < 0)
 	{
 		ft_putchar('-');
-		n = -nb;
+		n = (unsigned int)(-(long)nb);
 	}
 	else
-		n = nb;
+		n = (unsigned int)nb;
 	if (n > 9)
 		ft_putnbr(n / 10);
 	ft_putchar ((n % 10) + '0');
