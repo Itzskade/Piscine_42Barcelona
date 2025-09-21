@@ -50,7 +50,7 @@ Structures: pipes (`|`), redirections (`>`, `>>`), newline control
 | `find_sh.sh`      | `script1`, `final_task`, `launch`                |
 | `count_files.sh`  | `42`                                             |
 | `MAC.sh`          | `00:1a:2b:3c:4d:5e`, etc.                         |
-| \?$*'MaRViN'*$?\         | 42             |
+| `\?$*'MaRViN'*$?\`         | 42             |
 | `r_dwssap.sh`     | Reversed and sorted users filtered from passwd   |
 | `add_chelou.sh`   | `Salut` or `Segmentation fault`                  |
 
