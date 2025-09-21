@@ -50,7 +50,7 @@ Estructuras: pipes (`|`), redirecciones (`>`, `>>`), control de saltos de línea
 | `find_sh.sh`      | `script1`, `tarea_final`, `launch`           |
 | `count_files.sh`  | `42`                                         |
 | `MAC.sh`          | `00:1a:2b:3c:4d:5e`, etc.                     |
-| `skip.sh`         | Líneas alternas del resultado de `ls -l`     |
+|  `\?$*'MaRViN'*$?\`    | 42     |
 | `r_dwssap.sh`     | Usuarios invertidos y ordenados por filtros  |
 | `add_chelou.sh`   | `Salut` o `Segmentation fault`               |
 
